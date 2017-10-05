@@ -7,64 +7,91 @@
   overflow: hidden; }
   #mbrtWrap .innerWrap {
     position: absolute;
-    width: 90%;
-    width: calc(100% - 20px);
-    height: 90%;
-    height: calc(100% - 20px);
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
     margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    overflow: scroll;
+    overflow: hidden;
     background-color: #eee; }
-    #mbrtWrap .innerWrap header {
-      position: fixed;
-      width: 50%;
-      height: 50px;
-      right: 10px;
-      border: 1px solid #303030; }
-      #mbrtWrap .innerWrap header li {
-        position: relative;
-        float: left;
-        display: inline-block;
-        vertical-align: top;
-        zoom: 1;
-        /* Fix for IE7 */
-        *display: inline;
-        /* Fix for IE7 */
-        width: 20%; }
-    #mbrtWrap .innerWrap section {
+    #mbrtWrap .innerWrap .comingBar {
+      position: absolute;
+      width: 2%;
+      height: 100%;
+      left: 38px;
+      background: transparent url("../img/left_bar_bg.png") left -94px repeat;
+      background-size: 100%; }
+    #mbrtWrap .innerWrap .logoSteps {
+      position: absolute;
+      width: 39%;
+      height: 100%;
+      left: 200px;
+      background: transparent url("../img/ryan_hicks_logo.png") repeat;
+      background-size: 100%;
+      background-position: right 0px bottom 160px; }
+    #mbrtWrap .innerWrap section.poster {
       position: relative;
       width: 100%;
-      top: 100px; }
-    #mbrtWrap .innerWrap footer {
-      position: fixed;
-      width: 200px;
-      height: 50px;
-      left: 10px;
-      bottom: 10px;
-      border: 1px solid #303030; }
-      #mbrtWrap .innerWrap footer li {
-        position: relative;
-        float: left;
-        display: inline-block;
-        vertical-align: top;
-        zoom: 1;
-        /* Fix for IE7 */
-        *display: inline;
-        /* Fix for IE7 */
-        width: 25%;
-        text-transform: uppercase; }
-    #mbrtWrap .innerWrap .mbrtBttns {
-      line-height: 50px; }
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: transparent url("../img/ryan_background.png") center center no-repeat;
+      background-size: cover; }
+    #mbrtWrap .innerWrap .tagLine {
+      position: absolute;
+      width: 30%;
+      height: 316px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 0; }
+      #mbrtWrap .innerWrap .tagLine img {
+        width: 100%; }
+    #mbrtWrap .innerWrap ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    #mbrtWrap .innerWrap .rrssIcons {
+      position: absolute;
+      width: 43px;
+      height: 142px;
+      right: 58px;
+      top: 71px; }
+      #mbrtWrap .innerWrap .rrssIcons .iconBox {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0; }
+        #mbrtWrap .innerWrap .rrssIcons .iconBox img {
+          width: 100%; }
+      #mbrtWrap .innerWrap .rrssIcons #ytIcon {
+        width: 43px;
+        height: 31px;
+        top: 0; }
+      #mbrtWrap .innerWrap .rrssIcons #fbIcon {
+        width: 36px;
+        height: 36px;
+        bottom: 0; }
+    #mbrtWrap .innerWrap .mailIcon {
+      position: absolute;
+      width: 38px;
+      height: 26px;
+      right: 61px;
+      bottom: 67px; }
+      #mbrtWrap .innerWrap .mailIcon .iconBox {
+        width: 100%;
+        height: 100%; }
+        #mbrtWrap .innerWrap .mailIcon .iconBox img {
+          width: 100%; }
     #mbrtWrap .innerWrap a {
       display: block;
       text-align: center;
       text-decoration: none;
       color: #eee;
       font-weight: lighter;
-      background-color: #303030;
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
@@ -72,10 +99,42 @@
       transition: all 0.3s ease-in-out; }
       #mbrtWrap .innerWrap a:hover {
         color: #303030;
-        background-color: #eee;
         opacity: 0.5;
         filter: alpha(opacity=50);
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
         -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+
+@media only screen and (max-width: 1440px) {
+  #mbrtWrap .innerWrap .tagLine {
+    top: 50px; }
+  #mbrtWrap .innerWrap .rrssIcons {
+    top: 60px;
+    height: 100px; }
+    #mbrtWrap .innerWrap .rrssIcons #ytIcon {
+      width: 35px; }
+    #mbrtWrap .innerWrap .rrssIcons #fbIcon {
+      width: 28px; }
+  #mbrtWrap .innerWrap .mailIcon {
+    width: 30px;
+    bottom: 50px; } }
+@media only screen and (max-width: 1199px) {
+  #mbrtWrap .innerWrap .tagLine {
+    top: 120px; }
+  #mbrtWrap .innerWrap .rrssIcons {
+    top: 50px; }
+  #mbrtWrap .innerWrap .mailIcon {
+    bottom: 40px; } }
+@media only screen and (max-width: 991px) {
+  #mbrtWrap .innerWrap section.poster {
+    background-position: bottom right -120px; }
+  #mbrtWrap .innerWrap .rrssIcons {
+    right: 30px; }
+    #mbrtWrap .innerWrap .rrssIcons #ytIcon {
+      width: 28px; }
+    #mbrtWrap .innerWrap .rrssIcons #fbIcon {
+      width: 21px; }
+  #mbrtWrap .innerWrap .mailIcon {
+    right: 38px;
+    width: 24px; } }
 
 /*# sourceMappingURL=styling.css.map */

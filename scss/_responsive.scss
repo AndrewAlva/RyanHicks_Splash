@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1440px){
+	#mbrtWrap{
+		.innerWrap{
+			.tagLine{
+				top: 50px;
+			}
+
+			.rrssIcons{
+				top: 60px;
+				height: 100px;
+
+				#ytIcon{
+					width: 35px;
+				}
+				#fbIcon{
+					width: 28px;
+				}
+			}
+
+			.mailIcon{
+				width: 30px;
+				bottom: 50px;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 1199px){
+	#mbrtWrap{
+		.innerWrap{
+			.tagLine{
+				top: 120px;
+			}
+
+			.rrssIcons{
+				top: 50px;
+
+				#ytIcon{}
+				#fbIcon{}
+			}
+
+			.mailIcon{
+				bottom: 40px;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 991px){
+	#mbrtWrap{
+		.innerWrap{
+			section.poster{
+				background-position: bottom right -120px;
+			}
+
+			.rrssIcons{
+				right: 30px;
+
+				#ytIcon{
+					width: 28px;
+				}
+				#fbIcon{
+					width: 21px;
+				}
+			}
+
+			.mailIcon{
+				right: 38px;
+				width: 24px;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 767px){
+	#mbrtWrap{
+		.innerWrap{
+			.rrssIcons{
+				#ytIcon{}
+				#fbIcon{}
+			}
+
+			.mailIcon{}
+		}
+	}
+}
+
