@@ -29,34 +29,15 @@
 @media only screen and (max-width: 1199px){
 	#mbrtWrap{
 		.innerWrap{
+			min-height: auto;
+
 			.tagLine{
-				top: 120px;
+				top: 14%;
 			}
 
 			.rrssIcons{
 				top: 50px;
-
-				#ytIcon{}
-				#fbIcon{}
-			}
-
-			.mailIcon{
-				bottom: 40px;
-			}
-		}
-	}
-}
-
-
-@media only screen and (max-width: 991px){
-	#mbrtWrap{
-		.innerWrap{
-			section.poster{
-				background-position: bottom right -120px;
-			}
-
-			.rrssIcons{
-				right: 30px;
+				right: 23px;
 
 				#ytIcon{
 					width: 28px;
@@ -67,8 +48,40 @@
 			}
 
 			.mailIcon{
-				right: 38px;
 				width: 24px;
+				bottom: 40px;
+				right: 30px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) and (orientation: portrait){
+	#mbrtWrap{
+		.innerWrap{
+			.logoSteps{
+				left: 14%;
+			}
+
+			section.poster{
+				background-position: bottom right 30%;
+				background-size: 200%;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 991px){
+	#mbrtWrap{
+		.innerWrap{
+			.rrssIcons{
+				right: 30px;
+				top: 30px;
+			}
+
+			.mailIcon{
+				right: 38px;
 			}
 		}
 	}
@@ -78,12 +91,30 @@
 @media only screen and (max-width: 767px){
 	#mbrtWrap{
 		.innerWrap{
+			.tagLine{
+				top: 65%;
+			}
+
 			.rrssIcons{
+				height: 60px;
+
 				#ytIcon{}
-				#fbIcon{}
+				#fbIcon{
+					height: 23px;
+				}
 			}
 
 			.mailIcon{}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait){
+	#mbrtWrap{
+		.innerWrap{section.poster{
+				background-position: bottom right 40%;
+				background-size: 270%;
+			}
 		}
 	}
 }

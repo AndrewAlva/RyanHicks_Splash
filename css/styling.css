@@ -20,14 +20,14 @@
       position: absolute;
       width: 2%;
       height: 100%;
-      left: 38px;
+      left: 3%;
       background: transparent url("../img/left_bar_bg.png") left -94px repeat;
       background-size: 100%; }
     #mbrtWrap .innerWrap .logoSteps {
       position: absolute;
       width: 39%;
       height: 100%;
-      left: 200px;
+      left: 11%;
       background: transparent url("../img/ryan_hicks_logo.png") repeat;
       background-size: 100%;
       background-position: right 0px bottom 160px; }
@@ -117,23 +117,43 @@
     width: 30px;
     bottom: 50px; } }
 @media only screen and (max-width: 1199px) {
-  #mbrtWrap .innerWrap .tagLine {
-    top: 120px; }
-  #mbrtWrap .innerWrap .rrssIcons {
-    top: 50px; }
-  #mbrtWrap .innerWrap .mailIcon {
-    bottom: 40px; } }
-@media only screen and (max-width: 991px) {
+  #mbrtWrap .innerWrap {
+    min-height: auto; }
+    #mbrtWrap .innerWrap .tagLine {
+      top: 14%; }
+    #mbrtWrap .innerWrap .rrssIcons {
+      top: 50px;
+      right: 23px; }
+      #mbrtWrap .innerWrap .rrssIcons #ytIcon {
+        width: 28px; }
+      #mbrtWrap .innerWrap .rrssIcons #fbIcon {
+        width: 21px; }
+    #mbrtWrap .innerWrap .mailIcon {
+      width: 24px;
+      bottom: 40px;
+      right: 30px; } }
+@media only screen and (max-width: 1199px) and (orientation: portrait) {
+  #mbrtWrap .innerWrap .logoSteps {
+    left: 14%; }
   #mbrtWrap .innerWrap section.poster {
-    background-position: bottom right -120px; }
+    background-position: bottom right 30%;
+    background-size: 200%; } }
+@media only screen and (max-width: 991px) {
   #mbrtWrap .innerWrap .rrssIcons {
-    right: 30px; }
-    #mbrtWrap .innerWrap .rrssIcons #ytIcon {
-      width: 28px; }
-    #mbrtWrap .innerWrap .rrssIcons #fbIcon {
-      width: 21px; }
+    right: 30px;
+    top: 30px; }
   #mbrtWrap .innerWrap .mailIcon {
-    right: 38px;
-    width: 24px; } }
+    right: 38px; } }
+@media only screen and (max-width: 767px) {
+  #mbrtWrap .innerWrap .tagLine {
+    top: 65%; }
+  #mbrtWrap .innerWrap .rrssIcons {
+    height: 60px; }
+    #mbrtWrap .innerWrap .rrssIcons #fbIcon {
+      height: 23px; } }
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  #mbrtWrap .innerWrap section.poster {
+    background-position: bottom right 40%;
+    background-size: 270%; } }
 
 /*# sourceMappingURL=styling.css.map */
