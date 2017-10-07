@@ -1,10 +1,15 @@
-// var counter = 0;
+$(window).on("load",function(){
+	var firstObjects = $('.fadeLeftIn');
 
-// setInterval(function(){
-// 	console.log(counter + " segundos");
-// 	counter += 1;
-// }, 1000);
+	$.each($('.fadeLeftIn'), function(index, el) {
+		setTimeout(function(){
+	       $(el).removeClass('fadeLeftIn');
 
-// $("#mbrtWrap").load(function(){
-// 	console.log("Images loaded");
-// });
+	       if (index == (firstObjects.length - 1)) {
+	       		console.log("Last object");
+	       		$('.fadeUpIn').removeClass('fadeUpIn');
+	       };
+
+	    }, ( index * 250 ));
+	});
+});

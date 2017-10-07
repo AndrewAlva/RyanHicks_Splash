@@ -27,3 +27,10 @@
 	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
 	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
 }
+
+@mixin translate($xDisplace, $yDisplace){
+	-webkit-transform: translate($xDisplace, $yDisplace);
+	-moz-transform: translate($xDisplace, $yDisplace);
+	-ms-transform: translate($xDisplace, $yDisplace);
+	transform: translate($xDisplace, $yDisplace);
+}

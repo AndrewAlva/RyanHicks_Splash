@@ -1,0 +1,9 @@
+.fadeUpIn{
+	@include translate(0px, 20px);
+	@include opacity(0);
+}
+
+.fadeLeftIn{
+	@include translate(20px, 0px);
+	@include opacity(0);
+}
