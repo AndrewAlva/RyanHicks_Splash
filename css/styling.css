@@ -41,10 +41,10 @@
       background-size: cover; }
     #mbrtWrap .innerWrap .tagLine {
       position: absolute;
-      width: 30%;
-      height: 316px;
+      width: 34%;
+      height: 331px;
       margin: auto;
-      top: 0;
+      top: 15%;
       bottom: 0;
       right: 0; }
       #mbrtWrap .innerWrap .tagLine img {
@@ -55,31 +55,26 @@
       padding: 0; }
     #mbrtWrap .innerWrap .rrssIcons {
       position: absolute;
-      width: 43px;
-      height: 142px;
-      right: 58px;
-      top: 71px; }
+      width: 34px;
+      height: 170px;
+      right: 4%;
+      top: 7%; }
       #mbrtWrap .innerWrap .rrssIcons .iconBox {
-        position: absolute;
-        margin: auto;
-        left: 0;
-        right: 0; }
+        position: relative;
+        width: 100%;
+        margin-bottom: 19px; }
         #mbrtWrap .innerWrap .rrssIcons .iconBox img {
           width: 100%; }
       #mbrtWrap .innerWrap .rrssIcons #ytIcon {
-        width: 43px;
-        height: 31px;
-        top: 0; }
-      #mbrtWrap .innerWrap .rrssIcons #fbIcon {
-        width: 36px;
-        height: 36px;
-        bottom: 0; }
+        height: 25px; }
+      #mbrtWrap .innerWrap .rrssIcons .squareIcon {
+        height: 30px; }
     #mbrtWrap .innerWrap .mailIcon {
       position: absolute;
-      width: 38px;
-      height: 26px;
-      right: 61px;
-      bottom: 67px; }
+      width: 35px;
+      height: 24px;
+      right: 4%;
+      bottom: 7%; }
       #mbrtWrap .innerWrap .mailIcon .iconBox {
         width: 100%;
         height: 100%; }
@@ -105,33 +100,23 @@
 
 @media only screen and (max-width: 1440px) {
   #mbrtWrap .innerWrap .tagLine {
-    top: 50px; }
-  #mbrtWrap .innerWrap .rrssIcons {
-    top: 60px;
-    height: 100px; }
-    #mbrtWrap .innerWrap .rrssIcons #ytIcon {
-      width: 35px; }
-    #mbrtWrap .innerWrap .rrssIcons #fbIcon {
-      width: 28px; }
-  #mbrtWrap .innerWrap .mailIcon {
-    width: 30px;
-    bottom: 50px; } }
+    height: 200px;
+    top: 50px; } }
 @media only screen and (max-width: 1199px) {
   #mbrtWrap .innerWrap {
     min-height: auto; }
     #mbrtWrap .innerWrap .tagLine {
-      top: 14%; }
+      height: 160px;
+      top: 20%; }
     #mbrtWrap .innerWrap .rrssIcons {
-      top: 50px;
-      right: 23px; }
-      #mbrtWrap .innerWrap .rrssIcons #ytIcon {
-        width: 28px; }
-      #mbrtWrap .innerWrap .rrssIcons #fbIcon {
-        width: 21px; }
+      width: 28px;
+      height: 156px;
+      top: 5%; }
+      #mbrtWrap .innerWrap .rrssIcons .iconBox {
+        margin-bottom: 15px; }
     #mbrtWrap .innerWrap .mailIcon {
-      width: 24px;
-      bottom: 40px;
-      right: 30px; } }
+      width: 28px;
+      bottom: 5%; } }
 @media only screen and (max-width: 1199px) and (orientation: portrait) {
   #mbrtWrap .innerWrap .logoSteps {
     left: 14%; }
@@ -139,21 +124,27 @@
     background-position: bottom right 30%;
     background-size: 200%; } }
 @media only screen and (max-width: 991px) {
-  #mbrtWrap .innerWrap .rrssIcons {
-    right: 30px;
-    top: 30px; }
-  #mbrtWrap .innerWrap .mailIcon {
-    right: 38px; } }
+  #mbrtWrap .innerWrap .tagLine {
+    top: 25%; } }
 @media only screen and (max-width: 767px) {
   #mbrtWrap .innerWrap .tagLine {
-    top: 65%; }
+    height: 115px;
+    top: 40%; }
   #mbrtWrap .innerWrap .rrssIcons {
-    height: 60px; }
-    #mbrtWrap .innerWrap .rrssIcons #fbIcon {
-      height: 23px; } }
+    width: 22px;
+    height: 135px;
+    top: 3%;
+    right: 6%; }
+    #mbrtWrap .innerWrap .rrssIcons .iconBox {
+      margin-bottom: 10px; }
+  #mbrtWrap .innerWrap .mailIcon {
+    width: 22px;
+    right: 6%; } }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   #mbrtWrap .innerWrap section.poster {
     background-position: bottom right 40%;
-    background-size: 270%; } }
+    background-size: 270%; }
+  #mbrtWrap .innerWrap .tagLine {
+    width: 60%; } }
 
 /*# sourceMappingURL=styling.css.map */

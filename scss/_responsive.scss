@@ -2,24 +2,14 @@
 	#mbrtWrap{
 		.innerWrap{
 			.tagLine{
+				height: 200px;
 				top: 50px;
 			}
 
 			.rrssIcons{
-				top: 60px;
-				height: 100px;
-
-				#ytIcon{
-					width: 35px;
-				}
-				#fbIcon{
-					width: 28px;
-				}
 			}
 
 			.mailIcon{
-				width: 30px;
-				bottom: 50px;
 			}
 		}
 	}
@@ -32,25 +22,23 @@
 			min-height: auto;
 
 			.tagLine{
-				top: 14%;
+				height: 160px;
+				top: 20%;
 			}
 
 			.rrssIcons{
-				top: 50px;
-				right: 23px;
+				width: 28px;
+				height: 156px;
+				top: 5%;
 
-				#ytIcon{
-					width: 28px;
-				}
-				#fbIcon{
-					width: 21px;
+				.iconBox{
+					margin-bottom: 15px;
 				}
 			}
 
 			.mailIcon{
-				width: 24px;
-				bottom: 40px;
-				right: 30px;
+				width: 28px;
+				bottom: 5%;
 			}
 		}
 	}
@@ -75,13 +63,14 @@
 @media only screen and (max-width: 991px){
 	#mbrtWrap{
 		.innerWrap{
+			.tagLine{
+				top: 25%;
+			}
+
 			.rrssIcons{
-				right: 30px;
-				top: 30px;
 			}
 
 			.mailIcon{
-				right: 38px;
 			}
 		}
 	}
@@ -92,28 +81,39 @@
 	#mbrtWrap{
 		.innerWrap{
 			.tagLine{
-				top: 65%;
+				height: 115px;
+				top: 40%;
 			}
 
 			.rrssIcons{
-				height: 60px;
+				width: 22px;
+				height: 135px;
+				top: 3%;
+				right: 6%;
 
-				#ytIcon{}
-				#fbIcon{
-					height: 23px;
+				.iconBox{
+					margin-bottom: 10px;
 				}
 			}
 
-			.mailIcon{}
+			.mailIcon{
+				width: 22px;
+				right: 6%;
+			}
 		}
 	}
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait){
 	#mbrtWrap{
-		.innerWrap{section.poster{
+		.innerWrap{
+			section.poster{
 				background-position: bottom right 40%;
 				background-size: 270%;
+			}
+
+			.tagLine{
+				width: 60%;
 			}
 		}
 	}

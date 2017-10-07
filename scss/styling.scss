@@ -57,10 +57,10 @@
 
 			.tagLine{
 				position: absolute;
-				width: 30%;
-				height: 316px;
+				width: 34%;
+				height: 331px;
 				margin: auto;
-				top: 0; bottom: 0;
+				top: 15%; bottom: 0;
 				right: 0;
 				
 				img{
@@ -76,15 +76,15 @@
 
 			.rrssIcons{
 				position: absolute;
-				width: 43px;
-				height: 142px;
-				right: 58px;
-				top: 71px;
+				width: 34px;
+				height: 170px;
+				right: 4%;
+				top: 7%;
 
 				.iconBox{
-					position: absolute;
-					margin: auto;
-					left: 0; right: 0;
+					position: relative;
+					width: 100%;
+					margin-bottom: 19px;
 
 					img{
 						width: 100%;
@@ -92,23 +92,19 @@
 				}
 
 				#ytIcon{
-					width: 43px;
-					height: 31px;
-					top: 0;
+					height: 25px;
 				}
-				#fbIcon{
-					width: 36px;
-					height: 36px;
-					bottom: 0;
+				.squareIcon{
+					height: 30px;
 				}
 			}
 
 			.mailIcon{
 				position: absolute;
-				width: 38px;
-				height: 26px;
-				right: 61px;
-				bottom: 67px;
+				width: 35px;
+				height: 24px;
+				right: 4%;
+				bottom: 7%;
 
 				.iconBox{
 					width: 100%;
