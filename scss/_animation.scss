@@ -1,9 +1,16 @@
+// Fade In animations
 .fadeUpIn{
 	@include translate(0px, 20px);
 	@include opacity(0);
 }
 
 .fadeLeftIn{
-	@include translate(20px, 0px);
+	@include translate(10px, 0px);
 	@include opacity(0);
+}
+
+// Background animations
+@keyframes rollingUp{
+	from { background-position: 0 0; }
+	to { background-position: 0 -100%; }
 }

@@ -1,15 +1,22 @@
+@media only screen and (orientation: portrait){
+	#mbrtWrap{
+		.innerWrap{
+			.comingBar{
+				.imageContainer{
+					animation-duration: 50s;
+					-webkit-animation-duration: 50s;
+				}
+			}
+		}
+	}
+}
+
 @media only screen and (max-width: 1440px){
 	#mbrtWrap{
 		.innerWrap{
 			.tagLine{
 				height: 200px;
 				top: 50px;
-			}
-
-			.rrssIcons{
-			}
-
-			.mailIcon{
 			}
 		}
 	}
@@ -20,6 +27,12 @@
 	#mbrtWrap{
 		.innerWrap{
 			min-height: auto;
+
+			section.poster{
+				.imageContainer{
+					// background-position: center right 40%;
+				}
+			}
 
 			.tagLine{
 				height: 160px;
@@ -52,8 +65,10 @@
 			}
 
 			section.poster{
-				background-position: bottom right 30%;
-				background-size: 200%;
+				.imageContainer{
+					background-position: bottom right 30%;
+					background-size: 200%;
+				}
 			}
 		}
 	}
@@ -65,12 +80,6 @@
 		.innerWrap{
 			.tagLine{
 				top: 25%;
-			}
-
-			.rrssIcons{
-			}
-
-			.mailIcon{
 			}
 		}
 	}
@@ -108,8 +117,10 @@
 	#mbrtWrap{
 		.innerWrap{
 			section.poster{
-				background-position: bottom right 40%;
-				background-size: 270%;
+				.imageContainer{
+					background-position: bottom right 40%;
+					background-size: 270%;
+				}
 			}
 
 			.tagLine{

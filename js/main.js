@@ -6,7 +6,6 @@ $(window).on("load",function(){
 	       $(el).removeClass('fadeLeftIn');
 
 	       if (index == (firstObjects.length - 1)) {
-	       		console.log("Last object");
 	       		$('.fadeUpIn').removeClass('fadeUpIn');
 	       };
 

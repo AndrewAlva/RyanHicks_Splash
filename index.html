@@ -38,16 +38,22 @@
         <![endif]-->
 
         <div id="mbrtWrap">
-            <div class="innerWrap">
-                <div class="comingBar fadeLeftIn"></div>
+            <div id="scene" class="innerWrap" data-limit-y="0">
+                <div data-depth="0.1" class="comingBar">
+                    <div class="imageContainer fadeLeftIn"></div>
+                </div>
 
-                <div class="logoSteps fadeLeftIn"></div>
+                <div data-depth="0.1" class="logoSteps">
+                    <div class="imageContainer fadeLeftIn"></div>
+                </div>
 
 
-                <section id="ryanPoster" class="poster fadeUpIn"></section>
+                <section data-depth="0" id="ryanPoster" class="poster">
+                    <div class="imageContainer fadeUpIn"></div>
+                </section>
 
 
-                <ul class="rrssIcons">
+                <ul data-depth="0" class="rrssIcons">
                     <li id="ytIcon" class="iconBox fadeLeftIn"><a href="https://www.youtube.com/ryanthomashicks" target="_blank" alt="Youtube" title="Youtube"><img src="img/yt_icon.png" alt="Yt"></a></li>
 
                     <li id="igIcon" class="iconBox squareIcon fadeLeftIn"><a href="https://www.instagram.com/ryanthomashicks" target="_blank" alt="Instagram" title="Instagram"><img src="img/ig_icon.png" alt="Ig"></a></li>
@@ -57,12 +63,16 @@
                     <li id="inIcon" class="iconBox squareIcon fadeLeftIn"><a href="https://www.linkedin.com/ryanthomashicks" target="_blank" alt="Linkedin" title="Linkedin"><img src="img/in_icon.png" alt="In"></a></li>
                 </ul>
 
-                <ul class="mailIcon">
-                    <li class="iconBox fadeLeftIn"><a href="mailto:ryan@ryanhicks.io" target="_blank" alt="Mail" title="Mail"><img src="img/mail_icon.png" alt=""></a></li>
+                <ul data-depth="0" class="mailIcon">
+                    <li class="iconBox fadeLeftIn">
+                        <a href="mailto:ryan@ryanhicks.io" target="_blank" alt="Mail" title="Mail">
+                            <img src="img/mail_icon.png" alt="">
+                        </a>
+                    </li>
                 </ul>
 
-                <div class="tagLine fadeLeftIn">
-                    <img src="img/theone_question_show.png" alt="The One Question Show">
+                <div data-depth="0.9" class="tagLine">
+                    <img class="fadeLeftIn" src="img/theone_question_show.png" alt="The One Question Show">
                 </div>
 
             </div>
@@ -70,8 +80,15 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/vendor/parallax.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
+        <!-- Parallax Script -->
+        <script>
+            var scene = document.getElementById('scene');
+            var parallaxInstance = new Parallax(scene);
+        </script>
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

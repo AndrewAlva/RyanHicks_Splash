@@ -34,3 +34,10 @@
 	-ms-transform: translate($xDisplace, $yDisplace);
 	transform: translate($xDisplace, $yDisplace);
 }
+
+@mixin scale($xScale, $yScale){
+	-webkit-transform: scale($xScale, $yScale);
+	-moz-transform: scale($xScale, $yScale);
+	-ms-transform: scale($xScale, $yScale);
+	transform: scale($xScale, $yScale);
+}
